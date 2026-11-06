@@ -1,6 +1,6 @@
 # Eintunken · Vom Keks zum Krümel
 
-Interaktive 2D-Lehrsimulation im [Werkzeugdeck](https://falkbornmann.github.io/EIS-Fitting-Web/werkzeugdeck/#theoretische-spielereien).
+Interaktive 2D-Lehrsimulation im [Werkzeugdeck](https://werkzeugdeck.pages.dev/#theoretische-spielereien).
 
 **[Anwendung öffnen](https://falkbornmann.github.io/Eintunken/)**
 
