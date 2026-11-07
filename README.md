@@ -1,29 +1,9 @@
-# Eintunken · Vom Keks zum Krümel
+# Historischer Werkzeugdeck-Zugang
 
-Interaktive 2D-Lehrsimulation im [Werkzeugdeck](https://werkzeugdeck.pages.dev/#theoretische-spielereien).
+Dieses Repository ist archiviert. Die bisherigen Apps wurden in eigene Repositories überführt.
 
-**[Anwendung öffnen](https://falkbornmann.github.io/Eintunken/)**
+Aktueller Katalog: https://github.com/FalkBornmann/Werkzeugdeck
 
-Sechs illustrative Speisendatensätze, Milch und Tee, Winkel und Eintauchtiefe, vier zeitgesteuerte Phasen, Sättigungs- und Festigkeitskarte, optionaler erster Modellbruch, Zeitregler, CSV- und PNG-Export. Alle Materialwerte sind Lehrannahmen und veränderbar. Keine validierten Lebensmittel- oder Bruchvorhersagen.
+Website: https://werkzeugdeck.pages.dev/
 
-## Lokal starten
-
-Statische Dateien über einen lokalen HTTP-Server ausliefern. `file://` unterstützt den Modul-Web-Worker nicht zuverlässig. Keine Installation und kein Build für die veröffentlichte Anwendung nötig; keine externen Laufzeitbibliotheken.
-
-Tests: `npm test` mit Node.js >= 20.
-
-## Modell
-
-Konservatives Finite-Volumen-Verfahren für `dS/dt = div(D(S) grad(S))`, expliziter stabilitätsbeschränkter Euler-Schritt. Benetzte Randflächen erhalten S=1, übrige Ränder sind flussfrei. Nach Herausziehen bleibt die Gesamtflüssigkeitsmasse erhalten. Dritte Dimension: gleichförmige Extrusion ohne Fluss durch Vorder-/Rückseite. Keine Gravitation im Transport, Verdunstung, Drainage oder Quellung.
-
-Heuristisches Aufweichen anhand zeitintegrierter Zusatzsättigung; vereinfachter eingespannter Balken unter Eigengewicht, Flüssigkeitsgewicht und Auftrieb. Erster Bruch beendet die Physik. Fallanimation ist illustrativ. Modellgleichungen, Numerik, Konvergenzkriterium, Datenannahmen und Quellen stehen ausführlich in der Anwendung.
-
-## Dateien
-
-- `model.js`: reine Modellrechnung, auch unter Node testbar.
-- `worker.js`: Berechnung in einem Web Worker.
-- `app.js`: Bedienung, Canvas-Darstellung, Wiedergabe, Exporte.
-- `index.html`, `style.css`: Oberfläche, Theorie, Nutzungshinweise.
-- `tests/model.test.mjs`: Phasen, Sättigungsgrenzen, Massenerhaltung, Gittervergleich, Winkel, Bruch und Parameterprüfung.
-
-GitHub Pages liefert die Dateien aus. Eingaben bleiben im Browser; keine KI zur Laufzeit, Tracker oder externen Bibliotheken. Code und Texte wurden mit KI-Unterstützung erstellt. Privates Projekt in Entwicklung. Es gelten die gesetzlichen Haftungsregelungen.
+Die HTML-Seiten leiten alte Lesezeichen weiter. Die frühere Implementierung bleibt in der Git-Historie erhalten.
